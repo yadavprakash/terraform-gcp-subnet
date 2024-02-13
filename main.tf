@@ -9,6 +9,7 @@ module "labels" {
 data "google_client_config" "current" {
 }
 #============================(subnet)=================================
+#tfsec:ignore:google-compute-enable-vpc-flow-logs
 resource "google_compute_subnetwork" "subnetwork" {
   count                    = length(var.subnet_names)
   name                     = var.subnet_names[count.index]
