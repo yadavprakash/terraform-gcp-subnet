@@ -18,14 +18,14 @@ variable "label_order" {
 
 variable "repository" {
   type        = string
-  default     = "https://github.com/opsstation/terraform-gcp-subnet.git"
+  default     = "https://github.com/yadavprakash/terraform-gcp-subnet.git"
   description = "Terraform current module repo"
 }
 
 variable "managedby" {
   type        = string
-  default     = "opsstation"
-  description = "ManagedBy, opsstation."
+  default     = "yadavprakash"
+  description = "ManagedBy, yadavprakash."
 }
 
 variable "name" {
